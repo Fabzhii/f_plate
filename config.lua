@@ -1,9 +1,5 @@
 Config = {}
 
-Config.Keybind = 47
-Config.ShowLuaName = true 
-Config.CheckDist = 10
-
 Config.Notify = {
     {'Du bist in keinem Fahrzeug.', 'error'},
     {'Ein Fahrzeug mit diesem Kennzeichen existiert bereits.', 'error'},
