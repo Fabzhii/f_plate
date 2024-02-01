@@ -12,15 +12,13 @@ exports('use', function()
                 if xTaken then 
                     Config.Notifcation(Config.Notify[2])
                 else    
-
                     local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
                     local oldplate = ESX.Game.GetVehicleProperties(vehicle).plate
 
-                    Config.Notifcation(Config.Notify[3])
                     SetVehicleNumberPlateText(vehicle, text)
-
-
                     TriggerServerEvent('fplate:updatePlate', oldplate, text)
+
+                    Config.Notifcation(Config.Notify[3])
                 end 
             end, text)
         end 
